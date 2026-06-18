@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>📝 My To-Do List</h1>
+    <p class="task-counter">Tasks: <span id="taskCount">0</span></p>
+  </header>
+
+  <div class="input-section">
+    <input type="text" id="taskInput" placeholder="Enter a new task..." autofocus>
+    <button onclick="addTask()" class="add-btn">Add Task</button>
+  </div>
+
+  <div class="controls">
+    <button onclick="clearCompleted()" class="clear-btn">Clear Completed</button>
+    <button onclick="clearAll()" class="clear-all-btn">Clear All</button>
+  </div>
+
+  <ul id="taskList" class="task-list"></ul>
+  
+  <div id="emptyState" class="empty-state">
+    <p>✨ No tasks yet. Add one to get started!</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
